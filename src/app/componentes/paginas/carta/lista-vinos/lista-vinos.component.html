@@ -1,0 +1,7 @@
+<div class="zoom">
+  <app-zoom-vino [selectedVino]="selectedVino"></app-zoom-vino>
+</div>
+<h2 class="text-center m-2 mb-4">Lista de vinos</h2>
+<div class="caja">
+  <app-vino class="animated fadeIn" *ngFor="let current of vinos" [vino]="current" (mouseenter)="selecVino(current)" (mouseleave)="selectedVino=null"></app-vino>
+</div>

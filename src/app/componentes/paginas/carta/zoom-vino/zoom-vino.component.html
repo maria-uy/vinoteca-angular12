@@ -1,0 +1,12 @@
+<div id="marco" class="vinozoom" *ngIf="selectedVino">
+  <div class="vinozoom__img">
+    <img src="/assets/img/{{selectedVino.imagen}}" class="img-responsive">
+  </div>
+  <div class="vinozoom__info">
+    <h3>{{selectedVino.nombre}}</h3>
+    <h4>{{selectedVino.region}}</h4>
+    <h4>{{selectedVino.uvas}}</h4>
+    <h4>{{selectedVino.anyo}}</h4>
+    <p>{{selectedVino.descripcion}}</p>
+  </div>
+</div>
